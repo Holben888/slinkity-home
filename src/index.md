@@ -35,3 +35,5 @@ So start in the first camp, with zero cost of switching to the second 🚀
 This project is still _heavily_ under development in an early alpha phase. So there's no public NPM package for you to install, but you can expect regular updates on Twitter from these lovely accounts:
 
 {% include twitter-links.html %}
+
+{% include footer.html %}

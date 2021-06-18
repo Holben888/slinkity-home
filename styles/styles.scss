@@ -183,3 +183,14 @@ h2 {
     font-family: var(--pro-hacker-font);
   }
 }
+
+footer {
+  padding: 10px;
+
+  p {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8rem;
+    max-width: var(--content-max-width);
+  }
+}
