@@ -34,6 +34,8 @@
   font-display: swap;
 }
 
+$mobile: 500px;
+
 :root {
   --content-max-width: 740px;
   --pink: #ff00d6;
@@ -56,6 +58,10 @@ html {
     sans-serif;
 
   font-size: 1.2rem;
+
+  @media (max-width: $mobile) {
+    font-size: 1rem;
+  }
 }
 
 body {
@@ -81,6 +87,11 @@ body {
   background-repeat: repeat;
 }
 
+h1 > svg {
+  max-width: 95vw;
+  height: auto;
+}
+
 article {
   max-width: var(--content-max-width);
   margin: auto;
@@ -97,6 +108,14 @@ article {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+
+    @supports not (aspect-ratio: auto) {
+      height: 400px;
+
+      @media (max-width: $mobile) {
+        height: 240px;
+      }
+    }
 
     border: 5px solid transparent;
     border-image: linear-gradient(var(--primary), var(--secondary)) 1;
@@ -130,7 +149,11 @@ h2 {
 
 .twitter-cta {
   text-align: center;
-  font-size: 22px;
+  font-size: 1.2rem;
+
+  @media (max-width: $mobile) {
+    font-size: 1rem;
+  }
 }
 
 .banner-container {
