@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Slinkity</title>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@slinkitydotdev" />
+  <meta name="twitter:creator" content="@slinkitydotdev" />
+  <meta name="description"
+    content="The static site generator that grows with you. Plug into eleventy, build beautifully dynamic sites" />
+  <meta property="og:url" content="https://slinkity.dev" />
+  <meta property="og:image" content="https://slinkity.dev/assets/og-image-banner" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Slinkity" />
+  <meta property="og:title" />
+  <meta property="og:description"
+    content="The static site generator that grows with you. Plug into eleventy, build beautifully dynamic sites" />
+</head>
+
+<body>
+  <div class="banner-container">
+    {% include logo.html %}
+  </div>
+  <p class="twitter-cta">Follow along on <a href="https://twitter.com/slinkitydotdev">Twitter</a> for future project
+    updates! ❤️</p>
+
+  <article>
+    {{ content | safe }}
+  </article>
+</body>
+
+</html>

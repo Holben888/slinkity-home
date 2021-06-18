@@ -1,0 +1,4 @@
+node_modules/
+vscode/
+_site/
+*.DS_Store
