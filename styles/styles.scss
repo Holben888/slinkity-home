@@ -83,8 +83,18 @@ body {
   }
 
   background: var(--black);
-  background-image: url('/assets/constellation-background.svg');
-  background-repeat: repeat;
+
+  &:before {
+    content: '';
+    background-image: url('/assets/constellation-background.svg');
+    background-repeat: repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: -webkit-fill-available;
+  }
 }
 
 h1 > svg {
