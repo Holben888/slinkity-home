@@ -97,9 +97,12 @@ body {
   }
 }
 
-h1 > svg {
-  max-width: 95vw;
-  height: auto;
+h1 {
+  margin-bottom: 0;
+  > svg {
+    max-width: 95vw;
+    height: auto;
+  }
 }
 
 @for $i from 1 through 9 {
@@ -172,6 +175,15 @@ a:visited {
 
 h2 {
   margin-top: 2.4rem;
+}
+
+.tagline {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .twitter-cta {
