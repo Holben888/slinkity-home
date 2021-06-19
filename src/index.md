@@ -6,7 +6,7 @@ layout: base-layout
 
 Slinkity is a plugin that can extend any [11ty](https://11ty.dev/) site. Once installed, this:
 - 🚀 **Unlocks component frameworks** (React, Vue, and Svelte) for writing page templates _and_ layout templates. So you can turn an existing `.html` or `.liquid` file into a `.jsx` file, and immediately start building routes on your site using React.
-- 🔖 **Includes powerful shortcodes** to insert components into existing pages. Add a line like this to your markdown, HTML, Nunjucks, etc, and watch the magic happen: `{ % react './path/to/component.jsx' % }`
+- 🔖 **Includes powerful shortcodes** to insert components into existing pages. Add a line like this to your markdown, HTML, Nunjucks, etc, and watch the magic happen: `{% raw %}{% react './path/to/component.jsx' %}{% endraw %}`
 - 💧 **Hydrates these component-driven pages** on the client. In other words, all your [dynamic state management](https://reactjs.org/docs/hooks-intro.html) will work in development and production with 0 extra setup.
 - 🔗 **(Optionally) Turns your site into a single page app.** This opens the door for animated page transitions, persistent state between pages, and more!
 
@@ -28,7 +28,7 @@ But we're faced with a dilemma: **if we ever want to switch camps, we'll have to
 
 This is what **Slinkity** is built for. With our approach, you can:
 1.  Start building your static site with 11ty. This means a lower learning curve, fast buildtimes, and a strong developer community.
-2.  When (or if) you need some dynamic user interactions, you're free to add React, Vue or Svelte components to your existing site _with zero extra setup_. This could mean embedding components into existing templates using shortcodes (i.e. `{ % react 'FancyComponent.js' % }`), or **replacing** page and layout templates with components entirely (i.e. converting a liquid or HTML file into a JSX file).
+2.  When (or if) you need some dynamic user interactions, you're free to add React, Vue or Svelte components to your existing site _with zero extra setup_. This could mean embedding components into existing templates using shortcodes (i.e. `{% raw %}{% react 'FancyComponent.js' %}{% endraw %}`), or **replacing** page and layout templates with components entirely (i.e. converting a liquid or HTML file into a JSX file).
 
 So start in the first camp, with zero cost of switching to the second 🚀
 
