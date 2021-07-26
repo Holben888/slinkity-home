@@ -7,7 +7,7 @@ layout: base-layout
 Slinkity is a plugin that can extend any [11ty](https://11ty.dev/) site. Once installed, this:
 - 🚀 **Unlocks component frameworks** (React, Vue, and Svelte) for writing page templates _and_ layout templates. So you can turn an existing `.html` or `.liquid` file into a `.jsx` file, and immediately start building routes on your site using React.
 - 🔖 **Includes powerful shortcodes** to insert components into existing pages. Add a line like this to your markdown, HTML, Nunjucks, etc, and watch the magic happen: `{% raw %}{% react './path/to/component.jsx' %}{% endraw %}`
-- 💧 **Hydrates these component-driven pages** on the client. In other words, all your [dynamic state management](https://reactjs.org/docs/hooks-intro.html) will work in development and production with 0 extras setup.
+- 💧 **Hydrates these component-driven pages** on the client. In other words, all your [dynamic state management](https://reactjs.org/docs/hooks-intro.html) will work in development and production with 0 extra setups.
 - 🔗 **(Optionally) Turns your site into a single page app.** This opens the door for animated page transitions, persistent states between pages, and more!
 
 Let's see Slinkity in action ✨
