@@ -1,5 +1,5 @@
 ---
-layout: base-layout
+layout: home/layout
 ---
 
 > **Slinkity is now available as an early alpha!** No, it's not ready for production use. But if you want to have some fun and don't mind logging bugs, [install over here](https://www.npmjs.com/package/slinkity). Full documentation coming shortly :)
@@ -37,6 +37,4 @@ So start in the first camp, with zero cost of switching to the second 🚀
 ## How can I try it?
 This project is still _heavily_ under development in an early alpha phase. So there's no public NPM package for you to install, but you can expect regular updates on Twitter from these lovely accounts:
 
-{% include twitter-links.html %}
-
-{% include footer.html %}
+{% include home/twitter-links.html %}

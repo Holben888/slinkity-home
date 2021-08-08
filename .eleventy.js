@@ -7,6 +7,7 @@ module.exports = function config(eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents))
 
   return {
+    htmlTemplateEngine: 'njk',
     dir: {
       input: 'src',
     },
