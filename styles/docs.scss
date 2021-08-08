@@ -1,0 +1,41 @@
+.docs__container {
+  --nav-width: 200px;
+  display: grid;
+  grid-template-columns: var(--nav-width) 1fr;
+  max-width: calc(var(--content-max-width) + var(--nav-width));
+  align-items: flex-start;
+  margin: auto;
+  column-gap: 40px;
+
+  .docs__nav {
+    list-style: none;
+    padding: 0;
+    padding-top: 20px;
+    background: var(--grey-100);
+    border-radius: 10px;
+    margin-top: 40px;
+
+    li > a {
+      --bg: var(--grey-100);
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: var(--white);
+
+      &.active {
+        color: var(--pink);
+      }
+
+      &:hover {
+        color: var(--black);
+      }
+    }
+  }
+
+  .docs {
+    max-width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  height: 10000px;
+}

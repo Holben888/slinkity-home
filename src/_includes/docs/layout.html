@@ -1,0 +1,17 @@
+---
+layout: base-layout
+---
+
+<main class="docs__container">
+  <ul class="docs__nav">
+    {%- for doc in collections.docs -%}
+    <li>
+      <a href="{{doc.data.page.url}}"
+        class="{{'active' if doc.data.page.url === page.url else ''}}">{{doc.data.title}}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+  <article class="docs">
+    {{ content | safe }}
+  </article>
+</main>
