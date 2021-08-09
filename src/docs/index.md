@@ -9,7 +9,7 @@ title: Overview
 Slinkity is a tool for bringing dynamic, clientside interactions to your static 11ty site. Once installed, this:
 
 - 🚀 **Unlocks component frameworks** (like React) for writing page templates and layout templates. So, you can turn an existing `.html` or `.liquid` file into a `.jsx` file, and immediately start building routes using React.
-- 🔖 **Includes powerful shortcodes** to insert components into existing pages. Add a line like this to your markdown, HTML, Nunjucks, etc, and watch the magic happen: `{ % react './path/to/component.jsx' % }`
+- 🔖 **Includes powerful shortcodes** to insert components into existing pages. Add a line like this to your markdown, HTML, Nunjucks, etc, and watch the magic happen: {% raw %}`{% react './path/to/component.jsx' %}`{% endraw %}
 - 💧 **Hydrates these component-driven pages** on the client. In other words, all your dynamic state management will work in development and production with 0 extra setup.
 
 ### [📣 Find our full announcement post here →](/)

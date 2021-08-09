@@ -185,3 +185,5 @@ export default function RollCall({ date, names, title }) {
   ){% endraw %}
 }
 ```
+
+### [Learn the different ways to render components →](/docs/rendering-eager-lazy-static/)

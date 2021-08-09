@@ -2,7 +2,7 @@
 title: Quick start
 ---
 
-All you need is an empty directory to get started. But if you're using an existing 11ty site (or want a start project), you can make your first project using the lovely guide + community resources [over here](https://www.11ty.dev/docs/getting-started/).
+All you need is an empty directory to get started! But if you prefer a starter project with some pre-populated content, you can use the lovely guide + community resources [over on the 11ty docs](https://www.11ty.dev/docs/getting-started/).
 
 ## Installation
 
@@ -64,7 +64,7 @@ Alright, now let's do something... Slinkity-ish. Say you have a project director
 
 If you run this using the `slinkity --serve` command, you'll just see the gloriously static text "Look ma, it's Slinkity!"
 
-Now, let's add something _interactive._ Say we're keeping track of how many glasses of water we've had today (because [hydration is important](https://www.gatsbyjs.com/docs/conceptual/react-hydration/)!). If we know a little [ReactJS](https://reactjs.org/docs/getting-started.html), we can whip up a counter component like so:
+Now, let's add something _interactive._ Say we're keeping track of how many glasses of water we've had today (because [hydration is important](https://www.gatsbyjs.com/docs/conceptual/react-hydration/)!). If we know a little [ReactJS](https://reactjs.org/docs/getting-started.html), we can whip up a counter component under the `_includes/components/` directory like so:
 
 ```jsx
 // _includes/components/GlassCounter.jsx
@@ -99,7 +99,7 @@ Now how do we use this component on our `index.html` page? Let's reach for a [sh
 ...
 <body>
   <h1>Look ma, it's Slinkity!</h1>
-  {% raw %}{% react 'component/GlassCounter' %}{% endraw %}
+  {% raw %}{% react 'components/GlassCounter' %}{% endraw %}
 </body>
 ```
 
