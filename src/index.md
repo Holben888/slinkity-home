@@ -2,6 +2,8 @@
 layout: base-layout
 ---
 
+> **Slinkity is now available as an early alpha!** No, it's not ready for production use. But if you want to have some fun and don't mind logging bugs, [install over here](https://www.npmjs.com/package/slinkity). Full documentation coming shortly :)
+
 ## What is it?
 
 Slinkity is a plugin that can extend any [11ty](https://11ty.dev/) site. Once installed, this:
