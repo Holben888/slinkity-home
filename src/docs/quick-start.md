@@ -6,7 +6,15 @@ You'll need an existing 11ty site to get started. If you're new to 11ty, you can
 
 ## Installation
 
-Then, you can install Slinkity into your project repo like so:
+If you're adding Slinkity to an existing 11ty project, we recommend uninstalling any `@11ty/eleventy` from your `package.json` first:
+
+```bash
+npm uninstall @11ty/eleventy
+```
+
+> Slinkity relies on the latest 1.0 canary build to work properly, which Slinkity will automatically install as a dependency. Yes, this could involve some gotchas with existing 11ty plugins! If anything unexpected happens, let us know on our [GitHub issues page](https://github.com/Holben888/slinkity/issues).
+
+Now you can install Slinkity into your project repo like so:
 
 ```bash
 npm i --save-dev slinkity
@@ -100,4 +108,4 @@ This will do a few things:
 
 Now in your browser preview, clicking the button should increase your counter 🎉
 
-### [Learn more about component shortcodes ->](/docs/component-shortcodes)
+### [Learn more about component shortcodes →](/docs/component-shortcodes)
