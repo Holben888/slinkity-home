@@ -79,12 +79,4 @@ You're free to pass as many key / value pairs as you want! The names and orderin
 'url' page.url 'fileSlug' page.fileSlug %}{% endraw %}
 ```
 
-## Important markdown gotcha - "Why is my component showing up twice?"
-
-You may be tempted to use components in your markdown. This certainly works, but _be careful with paragraphs and headings!_
-
-Say we have a React component like this:
-
-```jsx
-function 
-```
+### [Learn about page-level components →](/docs/component-pages-layouts)

@@ -40,3 +40,15 @@ Saw we have an eagerly loaded component like this:
   {% raw %}{% react 'components/Example' 'render' 'lazy' %}{% endraw %}
 </body>
 ```
+
+Whenever we visit `page-with-shortcode.html`, we'll immediately import React and our `components/Example.jsx` JS bundle. This ensures our component is interactive as soon as possible.
+
+## "lazy"
+
+This is very similar to eager, but with a twist: we **only load the necessary JavaScript when our component is scrolled into view.** This uses the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) to figure out whether your component is on the page. Once it is, we quickly grab the necessary dependencies to hydrate your component.
+
+> No, you won't see an empty box while we download your component! All components are pre-rendered at build time so the user can have some placeholder content. Once all resources are downloaded, your component will become interactive.
+
+## "static"
+
+Static components are rendered to HTML at build time, **but no JavaScript is shipped to the client.** This means no interactivity, no state management, nothing. Use this option if you want to use component languages like React as a templating language only.
