@@ -1,8 +1,10 @@
 ---
-layout: base-layout
+layout: home/layout
 ---
 
-> **Slinkity is now available as an early alpha!** No, it's not ready for production use. But if you want to have some fun and don't mind logging bugs, [install over here](https://www.npmjs.com/package/slinkity). Full documentation coming shortly :)
+> **Slinkity is now available as an early alpha!** No, it's not ready for production use. But if you want to have some fun and don't mind logging bugs, head to the [quick start guide](/docs/quick-start/) :)
+
+{% include 'home/heading-links.html' %}
 
 ## What is it?
 
@@ -14,7 +16,7 @@ Slinkity is a plugin that can extend any [11ty](https://11ty.dev/) site. Once in
 
 Let's see Slinkity in action ✨
 
-{% include demo-embed.html %}
+{% include 'demo-embed.html' %}
 
 ## Our philosophy
 
@@ -32,11 +34,12 @@ This is what **Slinkity** is built for. With our approach, you can:
 1.  Start building your static site with 11ty. This means a lower learning curve, fast buildtimes, and a strong developer community.
 2.  When (or if) you need some dynamic user interactions, you're free to add React, Vue or Svelte components to your existing site _with zero extra setup_. This could mean embedding components into existing templates using shortcodes (i.e. `{% raw %}{% react 'FancyComponent.js' %}{% endraw %}`), or **replacing** page and layout templates with components entirely (i.e. converting a liquid or HTML file into a JSX file).
 
-So start in the first camp, with zero cost of switching to the second 🚀
+So start in the first camp, with zero cost of switching to the second.
 
 ## How can I try it?
-This project is still _heavily_ under development in an early alpha phase. So there's no public NPM package for you to install, but you can expect regular updates on Twitter from these lovely accounts:
 
-{% include twitter-links.html %}
+This project is still _heavily_ under development in an early alpha phase. But if you're brave enough, head to our [quick start guide](/docs/quick-start/) to try for yourself! 🚀
 
-{% include footer.html %}
+For future updates, release milestones, project showcases, and more, expect updates on Twitter from these lovely accounts:
+
+{% include 'home/twitter-links.html' %}

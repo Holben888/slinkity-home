@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/prism-synthwave-84.css">
   <link rel="icon" type="img/png" href="/assets/favicon.png" />
   <link rel="canonical" href="https://slinkity.dev" />
-  <title>Slinkity</title>
+  <title>{{title or 'Slinkity'}}</title>
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@slinkitydotdev" />
@@ -26,16 +27,9 @@
 </head>
 
 <body>
-  <div class="banner-container">
-    {% include logo.html %}
-  </div>
-  <p class="tagline">To eleventy and beyond</p>
-  <p class="twitter-cta">Follow along on <a href="https://twitter.com/slinkitydotdev">Twitter</a> for
-    project updates! ❤️</p>
+  {{ content | safe }}
 
-  <article>
-    {{ content | safe }}
-  </article>
+  {% include 'footer.html' %}
 </body>
 
 </html>

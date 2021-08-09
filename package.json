@@ -12,8 +12,11 @@
   "author": "Ben Holmes",
   "license": "unlicensed",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0-canary.39",
     "eleventy-plugin-sass": "^1.2.0",
     "js-yaml": "^3.14.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2"
   }
 }

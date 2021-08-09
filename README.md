@@ -4,7 +4,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/848d6eb2-f789-4f7c-9910-d4ac208f7122/deploy-status)](https://app.netlify.com/sites/eloquent-montalcini-1f5644/deploys)
 
-This is the repo for our landing site, [slinkity.dev](https://slinkity.dev). This is just our announcement + demo video for now, but could be the home to documentation in the future!
+This is the repo for Slinkity's landing page, [slinkity.dev](https://slinkity.dev). If you have a suggestion for our docs, noticed a typo, or have entirely new content to share, this is the place!
 
 ## Building locally
 
