@@ -14,7 +14,7 @@ Slinkity is a plugin that can extend any [11ty](https://11ty.dev/) site. Once in
 
 Let's see Slinkity in action ✨
 
-{% include demo-embed.html %}
+{% include 'demo-embed.html' %}
 
 ## Our philosophy
 
@@ -37,4 +37,4 @@ So start in the first camp, with zero cost of switching to the second 🚀
 ## How can I try it?
 This project is still _heavily_ under development in an early alpha phase. So there's no public NPM package for you to install, but you can expect regular updates on Twitter from these lovely accounts:
 
-{% include home/twitter-links.html %}
+{% include 'home/twitter-links.html' %}
