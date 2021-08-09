@@ -2,7 +2,7 @@
 title: Quick start
 ---
 
-You'll need an existing 11ty site to get started. If you're new to 11ty, you can make your first project using the lovely guide + community resources [over here](https://www.11ty.dev/docs/getting-started/).
+All you need is an empty directory to get started. But if you're using an existing 11ty site (or want a start project), you can make your first project using the lovely guide + community resources [over here](https://www.11ty.dev/docs/getting-started/).
 
 ## Installation
 
@@ -40,6 +40,8 @@ npx slinkity
 ```
 
 ...and your shiny new site will appear in the `_site` folder (or [wherever you tell 11ty to build your site](https://www.11ty.dev/docs/config/#output-directory)).
+
+But wait, you might not have any templates to build yet! Let's change that.
 
 ## Adding your first component shortcode
 
